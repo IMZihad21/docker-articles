@@ -176,4 +176,4 @@ Using NPM, we will set up a reverse proxy to access Portainer via a domain or su
 
 ## Conclusion
 
-By following these steps, you’ve deployed a robust hosting environment on your VPS using Docker. Nginx Proxy Manager allows easy reverse proxy setup, while Portainer provides seamless container management. This setup ensures scalability and secure access for hosting multiple applications.
+By following these steps, youâ€™ve deployed a robust hosting environment on your VPS using Docker. Nginx Proxy Manager allows easy reverse proxy setup, while Portainer provides seamless container management. This setup ensures scalability and secure access for hosting multiple applications.
