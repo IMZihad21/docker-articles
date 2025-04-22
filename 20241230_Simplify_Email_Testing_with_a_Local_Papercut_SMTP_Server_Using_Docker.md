@@ -100,12 +100,9 @@ Papercut SMTP is an invaluable tool for developers and teams working with email 
 
 Set it up in your development environment today, and take the stress out of email testing!
 
-To acknowledge the creators of Papercut SMTP, you can add the following credit to your article:
-
-
 ---
 
 ### Credits
 
-Papercut SMTP is developed and maintained by [Changemaker Studios](https://changemakerstudios.us/) and is open-source under the [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0).  
-The source code is available on [GitHub](https://github.com/ChangemakerStudios/Papercut-SMTP).
+Papercut SMTP is developed and maintained by [<u>Changemaker Studios</u>](https://changemakerstudios.us/) and is open-source under the [<u>Apache License 2.0</u>](https://www.apache.org/licenses/LICENSE-2.0).  
+The source code is available on [<u>GitHub</u>](https://github.com/ChangemakerStudios/Papercut-SMTP).
