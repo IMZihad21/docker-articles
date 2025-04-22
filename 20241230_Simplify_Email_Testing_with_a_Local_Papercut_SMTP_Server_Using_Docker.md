@@ -4,37 +4,6 @@ This article explores how to set up and use Papercut SMTP with Docker, highlight
 
 ---
 
-## Why Use Papercut SMTP?
-
-Papercut SMTP is designed to capture and display emails sent by applications for testing purposes. Instead of routing emails to actual recipients, it provides a safe, local environment to inspect email content, debug issues, and ensure the intended functionality.  
-
-### Key Use Cases:
-1. **Application Development**: Test email notifications, password resets, or transactional emails.
-2. **Safe Email Debugging**: Avoid unintentional email delivery to real users during development or staging.
-3. **Integration Testing**: Verify email generation and content within automated CI/CD pipelines.
-
----
-
-## Benefits of Using Papercut SMTP
-
-1. **User-Friendly Web Interface**: Papercut SMTP includes a simple web interface for viewing and managing captured emails, eliminating the need for additional email clients.  
-2. **Quick Setup**: The lightweight design and Docker compatibility ensure that you can spin up the server in minutes without complex configurations.  
-3. **Efficient Resource Usage**: Unlike traditional SMTP servers, Papercut runs locally with minimal overhead, making it ideal for development and testing.  
-4. **Controlled Environment**: Local deployment ensures that emails remain private and do not interfere with production systems.  
-5. **Cross-Platform Support**: Works seamlessly with any application that supports SMTP, regardless of the programming language or framework.
-
----
-
-## How It Works
-
-Papercut SMTP acts as a local SMTP server. When your application sends an email, Papercut intercepts it and displays the details in its web interface. The process is simple:
-
-1. Your application connects to the SMTP server using the standard SMTP protocol.
-2. Emails sent to the server are displayed in the Papercut SMTP web interface.
-3. Developers can view, debug, and delete emails as needed, ensuring the application functions correctly.
-
----
-
 ## How To Setup
 
 Here is the docker compose file for the papercut SMTP server.
@@ -56,6 +25,16 @@ Run `docker compose up -d` to start the service.
 
 ---
 
+## How It Works
+
+Papercut SMTP acts as a local SMTP server. When your application sends an email, Papercut intercepts it and displays the details in its web interface. The process is simple:
+
+1. Your application connects to the SMTP server using the standard SMTP protocol.
+2. Emails sent to the server are displayed in the Papercut SMTP web interface.
+3. Developers can view, debug, and delete emails as needed, ensuring the application functions correctly.
+
+---
+
 ## How to setup SMTP Configuration
 
 In your application, configure the email settings to point to the local Papercut SMTP server. Use the following details:
@@ -64,6 +43,27 @@ In your application, configure the email settings to point to the local Papercut
 - SMTP Port: 25.
 - No Authentication: Papercut SMTP does not require authentication for local use.
 - No SSL: Papercut SMTP does not require SSL for local use.
+
+---
+
+## Why Use Papercut SMTP?
+
+Papercut SMTP is designed to capture and display emails sent by applications for testing purposes. Instead of routing emails to actual recipients, it provides a safe, local environment to inspect email content, debug issues, and ensure the intended functionality.  
+
+### Key Use Cases:
+1. **Application Development**: Test email notifications, password resets, or transactional emails.
+2. **Safe Email Debugging**: Avoid unintentional email delivery to real users during development or staging.
+3. **Integration Testing**: Verify email generation and content within automated CI/CD pipelines.
+
+---
+
+## Benefits of Using Papercut SMTP
+
+1. **User-Friendly Web Interface**: Papercut SMTP includes a simple web interface for viewing and managing captured emails, eliminating the need for additional email clients.  
+2. **Quick Setup**: The lightweight design and Docker compatibility ensure that you can spin up the server in minutes without complex configurations.  
+3. **Efficient Resource Usage**: Unlike traditional SMTP servers, Papercut runs locally with minimal overhead, making it ideal for development and testing.  
+4. **Controlled Environment**: Local deployment ensures that emails remain private and do not interfere with production systems.  
+5. **Cross-Platform Support**: Works seamlessly with any application that supports SMTP, regardless of the programming language or framework.
 
 ---
 
@@ -99,3 +99,13 @@ The web interface allows you to inspect:
 Papercut SMTP is an invaluable tool for developers and teams working with email functionality. It ensures a controlled, efficient, and hassle-free environment for testing emails, making it a must-have for modern development workflows. Whether you’re debugging a password reset feature or verifying transactional email templates, Papercut SMTP offers simplicity and reliability.
 
 Set it up in your development environment today, and take the stress out of email testing!
+
+To acknowledge the creators of Papercut SMTP, you can add the following credit to your article:
+
+
+---
+
+### Credits
+
+Papercut SMTP is developed and maintained by [Changemaker Studios](https://changemakerstudios.us/) and is open-source under the [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0).  
+The source code is available on [GitHub](https://github.com/ChangemakerStudios/Papercut-SMTP).
