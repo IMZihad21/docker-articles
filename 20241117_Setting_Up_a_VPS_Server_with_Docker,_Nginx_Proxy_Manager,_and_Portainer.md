@@ -150,7 +150,7 @@ docker compose up -d
 4. Set the Forward Port to 81.
 5. Check Enable Websockets.
 6. Enable SSL.
-7. Check Enable SSL, use the Let's Encrypt certificate, add your email address, agree to the terms, and check Force SSL to ensure all traffic uses HTTPS.
+7. Check Enable SSL, use the Let's Encrypt certificate, add your email address, agree to the terms, and check "Force SSL" and "HTTP/2 support" to ensure all traffic uses HTTPS.
 8. Save the Proxy Host.
 9. Access NPM securely via the subdomain by visiting `https://npm.example.com`.
 
@@ -168,7 +168,7 @@ Using NPM, we will set up a reverse proxy to access Portainer via a domain or su
 4. Forward Hostname/IP: Enter the Portainer container's hostname, which in this case is `portainer`.
 5. Forward Port: Set the port to 9000.
 6. Enable Websockets: Check this option.
-7. SSL Configuration: Check Enable SSL. Use the Let's Encrypt certificate (add your email).
+7. SSL Configuration: Check Enable SSL, use the Let's Encrypt certificate, add your email address, agree to the terms, and check "Force SSL" and "HTTP/2 support" to ensure all traffic uses HTTPS.
 8. Save the Proxy Host: After saving, the reverse proxy will be active.
 9. Access Portainer via Domain: Visit `https://portainer.example.com`.
 
